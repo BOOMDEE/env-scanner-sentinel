@@ -21,7 +21,7 @@ It runs on GitHub's free compute to scan **all repositories** (public & private)
 * 🔍 **双重防御机制**：不仅检查 `.env` 等敏感文件，还通过正则扫描代码中的硬编码密钥（如 `API_KEY = "xxx"`）。  
 * 🔍 **Dual-Layer Defense**: Checks for sensitive files like `.env` AND scans code for hardcoded secrets (e.g., `API_KEY = "xxx"`).
 * 🛎️ **原生无缝报警**：一旦发现泄露，自动通过 resend API 秒级发送邮件通知。
-* 🛎️ Instant Email Alerts: Aborts workflow upon detection and sends instant email notifications via Resend API in seconds.
+* 🛎️ Instant Email Alerts: Once a leak is detected, an email notification is automatically sent within seconds through the resend API.
 
 ---
 
