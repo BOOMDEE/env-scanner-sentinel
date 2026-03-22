@@ -1,6 +1,6 @@
 # 🛡️ Env Sentinel (环境哨兵)
 
-![GitHub release](https://img.shields.io/github/v/release/BOOMDEE/env-sentinel?color=blue&style=flat-square)
+![GitHub release](https://img.shields.io/github/v/release/BOOMDEE/env-scanner-sentinel?color=blue&style=flat-square)
 ![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-red?style=flat-square)
 
 > 💡 **痛点 (Pain Point):** 你是否曾经历过失手将 `.env` 配置文件推送到 GitHub 的尴尬与惊慌？  
