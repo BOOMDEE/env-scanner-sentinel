@@ -1,0 +1,32 @@
+name: 'Env Sentinel'
+description: '🛡️ Scan all your public/private repos for leaked .env files and hardcoded secrets in seconds.'
+author: 'Jiaqi Yin'
+
+# 🏷️ 定义图标和颜色（会在 GitHub Actions 市场显示）
+branding:
+  icon: 'shield'
+  color: 'red'
+
+# 📥 用户输入参数
+inputs:
+  github-token:
+    description: 'Personal Access Token (PAT) with repo scope'
+    required: true
+  resend-api-key:
+    description: 'API Key for Resend to send alert emails'
+    required: true
+  alert-email:
+    description: 'The email address to receive alerts'
+    required: true
+
+# 🚀 运行配置
+runs:
+  using: 'composite'
+  steps:
+    - name: Run Scan and Alert Script
+      shell: bash
+      env:
+        GH_PAT: ${{ inputs.github-token }}
+        RESEND_KEY: ${{ inputs.resend-api-key }}
+        TO_EMAIL: ${{ inputs.alert-email }}
+      run: ${{ github.action_path }}/entrypoint.sh
