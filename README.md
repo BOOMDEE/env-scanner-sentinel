@@ -27,7 +27,8 @@ It runs on GitHub's free compute to scan **all repositories** (public & private)
 
 ## 🚀 快速开始 (Quick Start)
 
-在你的**env-scanner-sentinel 仓库**中创建 `.github/workflows/scan.yml`：  
-Create `.github/workflows/scan.yml` in your own **env-scanner-sentinel repository**:
+在你的**env-scanner-sentinel 仓库**中创建 `.github/workflows/scan.yml`
+Create `.github/workflows/scan.yml` in your own **env-scanner-sentinel repository**
+
 请前往本仓库的 [Releases](../../releases) 复制最新的actions文件。  
 Please go to this repository's [Releases](../../releases) and copy the latest file.
